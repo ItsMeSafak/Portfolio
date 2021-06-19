@@ -6,22 +6,39 @@
     min-height: 100vh;
 
     &--animation {
-        position: absolute;
-        left: 0;
-        top: 0;
         width: 100%;
         height: 100%;
         display: flex;
         justify-content: center;
         align-items: center;
         background-color: black;
-        animation: swipe-out .8s ease-out;
-        animation-delay: 3s;
 
         .title {
-            position: relative;
+            position: absolute;
             font-size: 50px;
+            font-weight: 900;
+            text-align: center;
             color: white;
+            width: 80px;
+            height: 80px;
+
+            &::before {
+                content: "";
+                position: absolute;
+                width: 100%;
+                height: 100%;
+                border-left: 3px solid white;
+                transform: translateX(-50%);
+            }
+
+            &::after {
+                content: "";
+                position: absolute;
+                width: 100%;
+                height: 100%;
+                border-left: 3px solid white;
+                transform: translateX(50%);
+            }
         }
     }
 
@@ -37,15 +54,5 @@
 
     &--finished {
         display: none;
-    }
-
-    @keyframes swipe-out {
-        from {
-            transform: translateY(0);
-        }
-
-        to {
-            transform: translateY(-100%);
-        }
     }
 }
