@@ -1,6 +1,11 @@
 <div class="welcome">
-  <div #welcomeAnimation [ngClass]="{'welcome--finished': animationFinished}" class="welcome--animation">
+  <!-- <div #welcomeAnimation [ngClass]="{'welcome--finished': animationFinished}" class="welcome--animation">
     <span class="title">Welcome</span>
+  </div> -->
+  <div class="wrapper">
+    <div class="wrapper--content">
+      <partial-header></partial-header>
+      <router-outlet></router-outlet>
+    </div>
   </div>
-  <router-outlet></router-outlet>
 </div>

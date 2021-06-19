@@ -4,7 +4,6 @@
     position: relative;
     width: 100%;
     min-height: 100vh;
-    overflow: hidden;
 
     &--animation {
         position: absolute;
@@ -23,6 +22,16 @@
             position: relative;
             font-size: 50px;
             color: white;
+        }
+    }
+
+    .wrapper {
+        padding: 20px;
+
+        &--content {
+            min-height: 95vh;
+            max-height: 95vh;
+            border: 2px solid black;
         }
     }
 
