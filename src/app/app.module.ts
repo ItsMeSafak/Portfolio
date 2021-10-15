@@ -7,7 +7,8 @@ import { HomeComponent } from './pages/home/home.component';
 import { PortfolioComponent } from './pages/portfolio/portfolio.component';
 import { HeaderComponent } from './partials/header/header.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { AngularFullpageModule } from '@fullpage/angular-fullpage';
+
+import { MnFullpageModule } from 'ngx-fullpage';
 
 @NgModule({
   declarations: [
@@ -19,8 +20,8 @@ import { AngularFullpageModule } from '@fullpage/angular-fullpage';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    AngularFullpageModule,
-    BrowserAnimationsModule
+    BrowserAnimationsModule,
+    MnFullpageModule.forRoot()
   ],
   providers: [],
   bootstrap: [AppComponent]

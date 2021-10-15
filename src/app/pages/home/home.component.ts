@@ -7,20 +7,9 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HomeComponent implements OnInit {
 
-  fullpage_api: any;
-  config: any;
+  constructor() {
+  }
 
-    constructor() {
-    }
-
-    ngOnInit() {  
-      this.config = {
-        navigation: true,
-      };
-    }
-
-    getRef(fullPageRef: any) {
-      this.fullpage_api = fullPageRef;
-    }
-
+  ngOnInit() {
+  }
 }

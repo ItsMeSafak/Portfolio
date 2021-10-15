@@ -106,9 +106,16 @@
               "src/assets"
             ],
             "styles": [
-              "src/styles.scss"
+              "src/styles.scss",
+              "node_modules/bootstrap/dist/css/bootstrap.css",
+              "node_modules/fullpage.js/dist/fullpage.css"
             ],
-            "scripts": []
+            "scripts": [
+              "node_modules/bootstrap/dist/js/bootstrap.js",
+              "node_modules/fullpage.js/dist/fullpage.js",
+              "node_modules/fullpage.js/vendors/scrolloverflow.min.js",
+              "node_modules/fullpage.js/dist/fullpage.js"
+            ]
           }
         }
       }
